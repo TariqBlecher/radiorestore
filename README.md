@@ -1,6 +1,4 @@
-
-# mldeconv
-
+An end-to-end approach to restoring Radio Interferometric Images. A simulated dataset consisting of points sources and extended emission is created, these clean images are then convolved with the Point Spread Function of an observation to create pairs of (corrupted, clean) training data. A U-NET is then trained in an end-to-end fashion to produce clean images given images corrupted with the same PSF.
 ## Dataset
 ```
 python drivers/create_sources.py --output_dir source/eso_5k
